@@ -399,9 +399,6 @@
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveBatteryLed">false</bool>
 
-    <!-- Whether device has notification LED -->
-    <bool name="config_hasNotificationLed">false</bool>
-
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_enableSmartPixels">true</bool>
 
