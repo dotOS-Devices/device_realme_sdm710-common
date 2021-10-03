@@ -4871,7 +4871,7 @@ case "$target" in
 
         # Enable input boost configuration
         echo "0:1324800" > /sys/module/cpu_boost/parameters/input_boost_freq
-        echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
+        echo 140 > /sys/module/cpu_boost/parameters/input_boost_ms
         # Enable bus-dcvs
         for cpubw in /sys/class/devfreq/*qcom,cpubw*
         do
@@ -5264,3 +5264,4 @@ esac
 misc_link=$(ls -l /dev/block/bootdevice/by-name/misc)
 real_path=${misc_link##*>}
 setprop persist.vendor.mmi.misc_dev_path $real_path
+_
